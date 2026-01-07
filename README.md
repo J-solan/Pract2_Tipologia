@@ -21,7 +21,12 @@ Este proyecto tiene como objetivo extraer, combinar, limpiar y analizar informac
 ## Estructura del proyecto
 ```text
 main/
-├─ data/                      # Carpeta donde se guardan los datasets generados (vacía inicialmente)
+├─ data/                      # Carpeta donde se guardan los datasets generados
+│ ├─ aemet_clean.csv          # Dataset con los datos limpios del clima de la AEMET
+│ ├─ aemet.csv                # Dataset con los datos del clima de la AEMET
+│ ├─ dataset.csv              # Dataset final para el modelado
+│ ├─ flights_clean.csv        # Dataset con los datos limpos de vuelos
+│ └─ flights.csv              # Dataset con los datos de vuelos
 ├─ source/
 │ ├─ main.py                  # Script principal de la práctica.
 │ ├─ clean_data.py            # Script para la limpieza necesaria de los datasets
